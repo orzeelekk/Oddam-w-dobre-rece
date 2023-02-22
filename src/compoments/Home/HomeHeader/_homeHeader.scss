@@ -1,0 +1,41 @@
+@import "./src/compoments/scss/main";
+.HeaderHeader {
+  //position: absolute;
+  //z-index: 1;
+  padding-top: 45px;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+  }
+  &_login {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 35px;
+    .login_element_link {
+      font-size: .9rem;
+      color: $color-gray-dark;
+      margin-left: 30px;
+      border: solid 0.75px white;
+      padding: 10px;
+      &:hover {
+        border: solid 0.75px $color-yellow;
+      }
+    }
+  }
+  &_nav {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    .nav_element_link {
+      border: solid 0.75px white;
+      padding: 10px;
+      font-size: 1.2rem;
+      color: $color-gray-dark;
+      margin-left: 10px;
+      &:hover {
+        border: solid 0.75px $color-yellow;
+      }
+    }
+  }
+}

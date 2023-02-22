@@ -1,0 +1,33 @@
+@import "./src/compoments/scss/main";
+.HomeMain {
+  &_container {
+  }
+  &_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+    padding-right: 160px;
+    &::after {
+      content: "";
+      background-image: url("../../Assets/Home-Hero-Image.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: -30%;
+      bottom: 0;
+      right: 0;
+    }
+
+    &_bottom {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+

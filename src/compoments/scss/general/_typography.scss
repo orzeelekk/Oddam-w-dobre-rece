@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-base;
+  font-size: 16px;
+  color: $color-gray-dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 30px;
+  &_Main {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 80px;
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../../Assets/Decoration.svg");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 35px;
+      position: absolute;
+      bottom: -50px;
+      left: calc(50% - 125px);
+    }
+  }
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  //@include notebook {
+  //  width: 100%;
+  //  padding: 0 15px;
+  //}
+}

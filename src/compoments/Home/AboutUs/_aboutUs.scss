@@ -1,0 +1,32 @@
+@import "./src/compoments/scss/main";
+.aboutUs {
+  background-color: $color-gray;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_box {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &_title {
+    width: 400px;
+    margin-bottom: 100px;
+  }
+  &_h2 {
+    font-size: 1.2rem;
+    text-align: center;
+
+  }
+  &_signature {
+    width: 150px;
+    align-self: flex-end;
+  }
+  &_photo {
+    width: 50%;
+  }
+}
